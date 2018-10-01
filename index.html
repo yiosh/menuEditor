@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script defer src="includes/fontawesome-all.min.js"></script>
+  <script src="includes/tinymce/tinymce.min.js"></script>
+  <script src="js/index.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Oxygen|Roboto|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Libre+Baskerville|Lora|Playfair+Display+SC"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="template">
+      <h2>Pick a template</h2>
+      <ul id="template-list">
+        <li id="Hor" class="template-option">Horizontal</li>
+        <li id="Ver" class="template-option">Vertical</li>
+        <li id="Hor2" class="template-option">Horizontalx2</li>
+        <li id="Hor3" class="template-option">Horizontalx3</li>
+        <li id="Ver2" class="template-option">Verticalx2</li>
+      </ul>
+      <!-- <select name="menus" id="menus">
+        <option value="" disabled selected>Select your option</option>
+      </select> -->
+    </div>
+
+    <div id="page-form">
+      <form action="" method="post">
+        <label for="pageNumber">How many pages do you want?</label>
+        <input type="number" name="" id="pageNumber" value="1">
+
+        <button id="submit" type="button">Submit</button>
+      </form>
+    </div>
+
+    <div id="container">
+      <input type="text" value="1/1" name="" id="page-counter" class="hidden-print">
+      <div id="buttons-container">
+        <button type="button" id="previous">
+          <i id="prev" class="hidden-print fas fa-arrow-circle-left"></i>
+        </button>
+        <form method="post">
+          <div id="root">
+            <ul id="editor-container">
+
+            </ul>
+          </div>
+        </form>
+
+        <button type="button" id="next">
+          <i id="nxt" class="hidden-print fas fa-arrow-circle-right"></i>
+        </button>
+
+      </div>
+      <div class="buttons">
+        <button type="button" id="new">
+          <i class="hidden-print fas fa-plus-circle"></i>
+        </button>
+        <button type="button" id="print">
+          <i class="hidden-print fas fa-print"></i>
+        </button>
+        <button type="button" id="save">
+          <i class="hidden-print fas fa-save"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="print-here"></div>
+</body>
+
+</html>
